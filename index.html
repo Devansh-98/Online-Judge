@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" class="full-height">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>CodeCrusade</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="mdb.min.css" rel="stylesheet">
+
+    <!-- Template styles -->
+    <style>
+        /* TEMPLATE STYLES */
+        .flex-center {
+            color: #fff;
+        }
+        .intro-1 {
+            background: url("coding.jpg")no-repeat center center;
+            background-size: cover;
+        }
+        .navbar .btn-group .dropdown-menu a:hover {
+            color: #000 !important;
+        }
+
+        .navbar .btn-group .dropdown-menu a:active {
+            color: #fff !important;
+        }
+        .color-code{
+            background-color: grey;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark elegant-color-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">CodeCrusade</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="prob1.php">Problem 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="prob2.php">Problem 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="prob3.php">Problem 3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="prob4.php">Problem 4</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="prob5.php">Problem 5</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <!--/.Navbar-->
+
+        <!--Intro Section-->
+        <section class="view intro-1 hm-black-strong">
+            <div class="full-bg-img flex-center">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <div class=" h1-responsive font-bold wow fadeInDown" data-wow-delay="0.2s"><h1 class="display-1">CodeCrusade</h1></div></li>
+                        <li>
+                            <p class="lead mt-4 mb-5 wow fadeInDown text-muted"></p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+    <!-- Main container-->
+    <div class="container">
+
+
+
+        <!--Section: Contact-->
+        <section id="contact pb-5">
+            <div class="row">
+
+                <!--/Second column-->
+            </div>
+        </section>
+        <!--Section: Contact-->
+
+    </div>
+    <!--/ Main container-->
+
+
+    <!--Footer-->
+    <footer class="page-footer center-on-small-only elegant-color-dark">
+
+       <!--ENTER YOUR OWN FOOTER HERE-->
+
+    </footer>
+    <!--/.Footer-->
+
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+    <!-- Bootstrap dropdown -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <!--Google Maps-->
+    <script src="https://maps.google.com/maps/api/js"></script>
+
+    <script>
+        function init_map() {
+
+            var var_location = new google.maps.LatLng(40.725118, -73.997699);
+
+            var var_mapoptions = {
+                center: var_location,
+
+                zoom: 14
+            };
+
+            var var_marker = new google.maps.Marker({
+                position: var_location,
+                map: var_map,
+                title: "New York"
+            });
+
+            var var_map = new google.maps.Map(document.getElementById("map-container"),
+                var_mapoptions);
+
+            var_marker.setMap(var_map);
+
+        }
+
+        google.maps.event.addDomListener(window, 'load', init_map);
+    </script>
+
+    <!-- Animations init-->
+    <script>
+        new WOW().init();
+    </script>
+
+
+</body>
+
+</html>
